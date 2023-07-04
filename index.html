@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Notes</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="task-form">
+            <h1>Task Notes</h1>
+            <div class="items-wrap">
+                <label for="task-date">Date: </label>
+                <input type="date" id="task-date" required />
+            </div>
+
+            <div class="items-wrap">
+                <label for="task-time">Time: </label>
+                <input type="time" id="task-time" required />
+            </div>
+
+            <div class="items-wrap">
+                <label for="task-details">Details: </label>
+                <textarea name="" id="task-details" placeholder="Write your task details" required></textarea>
+            </div>
+
+            <button type="submit">ADD TASK</button>
+        </form>
+
+        <div id="task-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
